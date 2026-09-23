@@ -8,5 +8,5 @@ urlpatterns = [
     path('create/', views.create_note, name='create'),  # GET/POST create note
     path('<int:pk>/', views.note_detail, name='detail'),  # GET/<id> show one note
     path('<int:pk>/edit/', views.edit_note, name='edit'),  # GET/POST/<id>/edit edit note
-    path('<int:pk>/delete', views.delete_note, name='delete'),  # POST/<id>/delete delete note
+    path('<int:pk>/delete/', views.delete_note, name='delete'),  # POST/<id>/delete delete note
 ]
