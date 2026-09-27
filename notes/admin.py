@@ -1,7 +1,10 @@
 from django.contrib import admin
-from .models imporet note
+from .models import note
+
 
 @admin.register(Note)
+
+
 class NoteAdmin(admin.ModelAdmin):
   """Register the Note model with the Django admin."""
   list_display = ('title', 'created_at', 'updated_at')
